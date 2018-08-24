@@ -1,0 +1,35 @@
+<br>
+<h1> Login to offer your space and receive rewards: </h1>
+<!-- 
+<%= form_for @current do |form| %>
+	<div class="field">
+		<%= form.label :email %>
+		<%= form.text_field :email %>
+	</div>
+	<div class="field">
+		<%= form.label :password %>
+		<%= form.text_field :password %>
+	</div>
+	<div>
+		<%= form.submit "Offer Space" %>
+	</div>
+<% end %>
+ -->
+
+ <%= form_tag '/profile' do %>
+	<div class="field">
+		<%= label_tag :email %>
+		<%= text_field_tag :email %>
+	</div>
+	<div class="field">
+		<%= label_tag :password %>
+		<%= text_field_tag :password %>
+	</div>
+	<div>
+		<%= submit_tag "Offer Space" %>
+	</div>
+<% end %>
+
+<br>
+<%= link_to "Cancel", '/landing' %>
+

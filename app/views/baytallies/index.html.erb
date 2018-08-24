@@ -1,0 +1,20 @@
+<h1>Bay Tallies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Bay 1</th>
+      <th>Bay 2</th>
+      <th>Bay 3</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  	<tr>
+    <% @baytallies.each do |baytally| %>
+        <td><b><%= baytally.tally %></b> Open Spaces </td>
+    <% end %>
+    </tr>
+  </tbody>
+</table>

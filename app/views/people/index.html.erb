@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1 align="center">Employees</h1>
+
+<table align="center">
+  <thead>
+    <tr>
+      <th>Email</th>
+      <th>Password</th>
+      <th>Has Space&ensp;</th>
+      <th>Bay&ensp;</th>
+      <th>Points</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @people.each do |person| %>
+      <tr>
+        <td ><%= person.email %>&ensp;</td>
+        <td><%= person.password %></td>
+        <td align="center"><%= person.has_space %>&ensp;</td>
+        <td align="center"><%= person.bay %>&ensp;</td>
+        <td align="center"><%= person.points %>&ensp;</td>
+        <td>&ensp;<%= link_to 'Show', person%> &ensp;</td>
+        <td><%= link_to 'Edit', edit_person_path(person) %>&ensp;</td> 
+        <td><%= link_to 'Destroy', person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<a style="max-width: 400px; margin: auto;" class="btn btn-primary btn-lg btn-block" href= "people/new" ><%= "New Person" %> </a> <br>

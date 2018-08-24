@@ -1,0 +1,27 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1 align="center"> Log In </h1><br>
+<p align="center" style="color:red"> <%= @error %> </p>
+<div align="center">
+ <%= form_tag '/log_user_in' do %>
+	<div class="field">
+		<%= text_field_tag :email, nil, placeholder: "Email Address" %>
+	</div>
+	<div class="field">
+		<br>
+		<%= text_field_tag :password, nil, placeholder: "Password" %>
+	</div><br><br>
+	<div>
+		<a class="btn btn-secondary btn-lg" href="/landing">Cancel</a> &ensp;
+		<%= submit_tag "Offer Space", class: "btn btn-primary btn-lg" %>
+	</div>
+<% end %>
+</div>
+<br>
+

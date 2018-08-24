@@ -1,0 +1,2 @@
+class Baytally < ApplicationRecord
+end
