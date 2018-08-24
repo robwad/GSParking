@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_23_065905) do
+ActiveRecord::Schema.define(version: 2018_08_24_093715) do
 
   create_table "baytallies", force: :cascade do |t|
     t.integer "bay_number"
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 2018_08_23_065905) do
     t.string "voucher_code"
     t.string "offer_date"
     t.string "date"
+    t.integer "baycode"
   end
 
   create_table "users", force: :cascade do |t|
