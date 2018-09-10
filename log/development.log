@@ -30253,3 +30253,328 @@ FirstMailer#sample_email: processed outbound mail in 34.2ms
 Completed 200 OK in 39ms (Views: 0.3ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/login" for 127.0.0.1 at 2018-08-24 15:42:27 +0200
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by GiftingController#login as HTML
+  Rendering gifting/login.html.erb within layouts/application
+  Rendered gifting/login.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 477ms (Views: 450.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landing" for 127.0.0.1 at 2018-08-24 15:42:29 +0200
+Processing by GiftingController#landing as HTML
+  Rendering gifting/landing.html.erb within layouts/application
+  Rendered gifting/landing.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 66ms (Views: 61.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/choosebay" for 127.0.0.1 at 2018-08-24 15:42:31 +0200
+Processing by BookingController#choosebay as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."date" = ? AND "users"."bay" = ?[0m  [["date", "2018-08-24"], ["bay", 1]]
+  ↳ app/controllers/booking_controller.rb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."date" = ? AND "users"."bay" = ?[0m  [["date", "2018-08-24"], ["bay", 2]]
+  ↳ app/controllers/booking_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."date" = ? AND "users"."bay" = ?[0m  [["date", "2018-08-24"], ["bay", 3]]
+  ↳ app/controllers/booking_controller.rb:8
+  Rendering booking/choosebay.html.erb within layouts/application
+  Rendered booking/choosebay.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 111ms (Views: 54.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/landing" for 127.0.0.1 at 2018-08-24 15:42:34 +0200
+Processing by GiftingController#landing as HTML
+  Rendering gifting/landing.html.erb within layouts/application
+  Rendered gifting/landing.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 85ms (Views: 82.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-08-24 15:42:35 +0200
+Processing by GiftingController#login as HTML
+  Rendering gifting/login.html.erb within layouts/application
+  Rendered gifting/login.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 96ms (Views: 92.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landing" for 127.0.0.1 at 2018-08-24 15:42:36 +0200
+Processing by GiftingController#landing as HTML
+  Rendering gifting/landing.html.erb within layouts/application
+  Rendered gifting/landing.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 104ms (Views: 100.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-08-24 15:42:38 +0200
+Processing by GiftingController#login as HTML
+  Rendering gifting/login.html.erb within layouts/application
+  Rendered gifting/login.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 97ms (Views: 94.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-08-24 15:42:44 +0200
+Processing by GiftingController#login as HTML
+  Rendering gifting/login.html.erb within layouts/application
+  Rendered gifting/login.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 57ms (Views: 54.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2018-08-24 15:42:46 +0200
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:18
+  Rendered people/index.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 67ms (Views: 59.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/landing" for 127.0.0.1 at 2018-08-24 15:44:26 +0200
+Processing by GiftingController#landing as HTML
+  Rendering gifting/landing.html.erb within layouts/application
+  Rendered gifting/landing.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 77ms (Views: 73.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-08-24 15:44:27 +0200
+Processing by GiftingController#profile as HTML
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."email" = ? LIMIT ?[0m  [["email", "jasmine.haigh@getsmarter.com"], ["LIMIT", 1]]
+  ↳ app/controllers/gifting_controller.rb:43
+  Rendering gifting/profile.html.erb within layouts/application
+  Rendered gifting/profile.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 69ms (Views: 61.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-08-24 16:27:57 +0200
+Processing by GiftingController#login as HTML
+  Rendering gifting/login.html.erb within layouts/application
+  Rendered gifting/login.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 88ms (Views: 85.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landing" for 127.0.0.1 at 2018-08-24 16:28:00 +0200
+Processing by GiftingController#landing as HTML
+  Rendering gifting/landing.html.erb within layouts/application
+  Rendered gifting/landing.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 77ms (Views: 74.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/choosebay" for 127.0.0.1 at 2018-08-24 16:28:05 +0200
+Processing by BookingController#choosebay as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."date" = ? AND "users"."bay" = ?[0m  [["date", "2018-08-24"], ["bay", 1]]
+  ↳ app/controllers/booking_controller.rb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."date" = ? AND "users"."bay" = ?[0m  [["date", "2018-08-24"], ["bay", 2]]
+  ↳ app/controllers/booking_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."date" = ? AND "users"."bay" = ?[0m  [["date", "2018-08-24"], ["bay", 3]]
+  ↳ app/controllers/booking_controller.rb:8
+  Rendering booking/choosebay.html.erb within layouts/application
+  Rendered booking/choosebay.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 85ms (Views: 77.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/button1" for 127.0.0.1 at 2018-08-24 16:28:06 +0200
+Processing by BookingController#button1 as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."date" = ? AND "users"."bay" = ?[0m  [["date", "2018-08-24"], ["bay", 1]]
+  ↳ app/controllers/booking_controller.rb:13
+Redirected to http://localhost:3000/enterdetails
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/enterdetails" for 127.0.0.1 at 2018-08-24 16:28:06 +0200
+Processing by BookingController#enterdetails as HTML
+  Rendering booking/enterdetails.html.erb within layouts/application
+  Rendered booking/enterdetails.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 68ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/choosebay" for 127.0.0.1 at 2018-08-24 16:28:08 +0200
+Processing by BookingController#choosebay as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."date" = ? AND "users"."bay" = ?[0m  [["date", "2018-08-24"], ["bay", 1]]
+  ↳ app/controllers/booking_controller.rb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."date" = ? AND "users"."bay" = ?[0m  [["date", "2018-08-24"], ["bay", 2]]
+  ↳ app/controllers/booking_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."date" = ? AND "users"."bay" = ?[0m  [["date", "2018-08-24"], ["bay", 3]]
+  ↳ app/controllers/booking_controller.rb:8
+  Rendering booking/choosebay.html.erb within layouts/application
+  Rendered booking/choosebay.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 80ms (Views: 75.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/button1" for 127.0.0.1 at 2018-08-24 16:28:09 +0200
+Processing by BookingController#button1 as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."date" = ? AND "users"."bay" = ?[0m  [["date", "2018-08-24"], ["bay", 1]]
+  ↳ app/controllers/booking_controller.rb:13
+Redirected to http://localhost:3000/enterdetails
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/enterdetails" for 127.0.0.1 at 2018-08-24 16:28:09 +0200
+Processing by BookingController#enterdetails as HTML
+  Rendering booking/enterdetails.html.erb within layouts/application
+  Rendered booking/enterdetails.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 75ms (Views: 71.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/checkdetails" for 127.0.0.1 at 2018-08-24 16:28:10 +0200
+Processing by BookingController#checkdetails as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZlpzUPenn5uOJxyPAv5dgv0v4U3FBTGITTBoSWjLmAtJQiw38XM5qK3KfYlAMYTG6exNabxxVCo8RPJNl5WfYw==", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Reserve Space"}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."email" = ? AND "people"."password" = ? LIMIT ?[0m  [["email", ""], ["password", ""], ["LIMIT", 1]]
+  ↳ app/controllers/booking_controller.rb:46
+  Rendering booking/enterdetails.html.erb within layouts/application
+  Rendered booking/enterdetails.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 49ms (Views: 46.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/choosebay" for 127.0.0.1 at 2018-08-24 16:28:11 +0200
+Processing by BookingController#choosebay as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."date" = ? AND "users"."bay" = ?[0m  [["date", "2018-08-24"], ["bay", 1]]
+  ↳ app/controllers/booking_controller.rb:6
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."date" = ? AND "users"."bay" = ?[0m  [["date", "2018-08-24"], ["bay", 2]]
+  ↳ app/controllers/booking_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."date" = ? AND "users"."bay" = ?[0m  [["date", "2018-08-24"], ["bay", 3]]
+  ↳ app/controllers/booking_controller.rb:8
+  Rendering booking/choosebay.html.erb within layouts/application
+  Rendered booking/choosebay.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 66ms (Views: 58.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/landing" for 127.0.0.1 at 2018-08-24 16:28:12 +0200
+Processing by GiftingController#landing as HTML
+  Rendering gifting/landing.html.erb within layouts/application
+  Rendered gifting/landing.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 66ms (Views: 63.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-08-24 16:28:13 +0200
+Processing by GiftingController#login as HTML
+  Rendering gifting/login.html.erb within layouts/application
+  Rendered gifting/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 67ms (Views: 64.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/log_user_in" for 127.0.0.1 at 2018-08-24 16:28:21 +0200
+Processing by GiftingController#log_user_in as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EsjIAI1g0At8yfkzBLCFj1dglrD4+HMHa1U6DcvyIWVY4G4y0Jn4YkCzW1XMhNmQ4dD8ftoGyAkRgH9MIj9MNQ==", "email"=>"fake.person@getsmarter.com", "password"=>"[FILTERED]", "commit"=>"Offer Space"}
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."email" = ? AND "people"."password" = ? LIMIT ?[0m  [["email", "fake.person@getsmarter.com"], ["password", "fakeperson"], ["LIMIT", 1]]
+  ↳ app/controllers/gifting_controller.rb:19
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."date" = ? LIMIT ?[0m  [["email", "fake.person@getsmarter.com"], ["date", "2018-08-24"], ["LIMIT", 1]]
+  ↳ app/controllers/gifting_controller.rb:29
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifting_controller.rb:30
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "password", "created_at", "updated_at", "date", "bay") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "fake.person@getsmarter.com"], ["password", "fakeperson"], ["created_at", "2018-08-24 14:28:21.180429"], ["updated_at", "2018-08-24 14:28:21.180429"], ["date", "2018-08-24"], ["bay", 2]]
+  ↳ app/controllers/gifting_controller.rb:30
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifting_controller.rb:30
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifting_controller.rb:32
+  [1m[36mPerson Update (0.3ms)[0m  [1m[33mUPDATE "people" SET "points" = ?, "updated_at" = ? WHERE "people"."id" = ?[0m  [["points", 60], ["updated_at", "2018-08-24 14:28:21.183256"], ["id", 8]]
+  ↳ app/controllers/gifting_controller.rb:32
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifting_controller.rb:32
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 17ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-08-24 16:28:21 +0200
+Processing by GiftingController#profile as HTML
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."email" = ? LIMIT ?[0m  [["email", "fake.person@getsmarter.com"], ["LIMIT", 1]]
+  ↳ app/controllers/gifting_controller.rb:43
+  Rendering gifting/profile.html.erb within layouts/application
+  Rendered gifting/profile.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 51ms (Views: 46.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/item1" for 127.0.0.1 at 2018-08-24 16:28:35 +0200
+Processing by GiftingController#item1 as HTML
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."email" = ? LIMIT ?[0m  [["email", "fake.person@getsmarter.com"], ["LIMIT", 1]]
+  ↳ app/controllers/gifting_controller.rb:49
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifting_controller.rb:51
+  [1m[36mPerson Update (0.4ms)[0m  [1m[33mUPDATE "people" SET "points" = ?, "updated_at" = ? WHERE "people"."id" = ?[0m  [["points", 10], ["updated_at", "2018-08-24 14:28:35.465473"], ["id", 8]]
+  ↳ app/controllers/gifting_controller.rb:51
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifting_controller.rb:51
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 7ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-08-24 16:28:35 +0200
+Processing by GiftingController#profile as HTML
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."email" = ? LIMIT ?[0m  [["email", "fake.person@getsmarter.com"], ["LIMIT", 1]]
+  ↳ app/controllers/gifting_controller.rb:43
+  Rendering gifting/profile.html.erb within layouts/application
+  Rendered gifting/profile.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 57ms (Views: 50.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/landing" for 127.0.0.1 at 2018-08-24 16:28:49 +0200
+Processing by GiftingController#landing as HTML
+  Rendering gifting/landing.html.erb within layouts/application
+  Rendered gifting/landing.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 80ms (Views: 77.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-08-24 16:28:50 +0200
+Processing by GiftingController#profile as HTML
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."email" = ? LIMIT ?[0m  [["email", "fake.person@getsmarter.com"], ["LIMIT", 1]]
+  ↳ app/controllers/gifting_controller.rb:43
+  Rendering gifting/profile.html.erb within layouts/application
+  Rendered gifting/profile.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 87ms (Views: 83.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/landing" for 127.0.0.1 at 2018-08-24 16:28:54 +0200
+Processing by GiftingController#landing as HTML
+  Rendering gifting/landing.html.erb within layouts/application
+  Rendered gifting/landing.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 87ms (Views: 84.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/choosebay" for 127.0.0.1 at 2018-08-24 16:28:55 +0200
+Processing by BookingController#choosebay as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."date" = ? AND "users"."bay" = ?[0m  [["date", "2018-08-24"], ["bay", 1]]
+  ↳ app/controllers/booking_controller.rb:6
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."date" = ? AND "users"."bay" = ?[0m  [["date", "2018-08-24"], ["bay", 2]]
+  ↳ app/controllers/booking_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."date" = ? AND "users"."bay" = ?[0m  [["date", "2018-08-24"], ["bay", 3]]
+  ↳ app/controllers/booking_controller.rb:8
+  Rendering booking/choosebay.html.erb within layouts/application
+  Rendered booking/choosebay.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 77ms (Views: 70.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/button2" for 127.0.0.1 at 2018-08-24 16:28:57 +0200
+Processing by BookingController#button2 as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."date" = ? AND "users"."bay" = ?[0m  [["date", "2018-08-24"], ["bay", 2]]
+  ↳ app/controllers/booking_controller.rb:22
+Redirected to http://localhost:3000/enterdetails
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/enterdetails" for 127.0.0.1 at 2018-08-24 16:28:57 +0200
+Processing by BookingController#enterdetails as HTML
+  Rendering booking/enterdetails.html.erb within layouts/application
+  Rendered booking/enterdetails.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 72ms (Views: 68.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/checkdetails" for 127.0.0.1 at 2018-08-24 16:29:02 +0200
+Processing by BookingController#checkdetails as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bFWRmhL8eDimGJLRKenyiaKdG/LpypX0TuUm+svvzqpDTc79FCjeC4X189drJivNtl631pC+8FY/kbz+NLHJwg==", "email"=>"andrew.tainton@getsmarter.com", "password"=>"[FILTERED]", "commit"=>"Reserve Space"}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."email" = ? AND "people"."password" = ? LIMIT ?[0m  [["email", "andrew.tainton@getsmarter.com"], ["password", "andrewtainton"], ["LIMIT", 1]]
+  ↳ app/controllers/booking_controller.rb:46
+Redirected to http://localhost:3000/bookingconfirmation
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/bookingconfirmation" for 127.0.0.1 at 2018-08-24 16:29:02 +0200
+Processing by BookingController#bookingconfirmation as HTML
+  Rendering booking/bookingconfirmation.html.erb within layouts/application
+  Rendered booking/bookingconfirmation.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 52ms (Views: 48.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landing" for 127.0.0.1 at 2018-08-24 16:29:03 +0200
+Processing by GiftingController#landing as HTML
+  Rendering gifting/landing.html.erb within layouts/application
+  Rendered gifting/landing.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 70ms (Views: 66.4ms | ActiveRecord: 0.0ms)
+
+
