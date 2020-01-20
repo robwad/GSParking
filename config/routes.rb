@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
   resources :people
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  get '/baytallies', to: 'baytallies#index'
+  
+  get '/', to: 'gifting#landing'
 
+  get '/baytallies', to: 'baytallies#index'
+  
   get '/choosebay', to: 'booking#choosebay'
   get '/enterdetails', to: 'booking#enterdetails'
   get '/bookingconfirmation', to: 'booking#bookingconfirmation'
